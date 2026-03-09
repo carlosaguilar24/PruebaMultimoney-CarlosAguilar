@@ -1,0 +1,126 @@
+{
+  "info": {
+    "_postman_id": "8203cb3f-f378-4be2-bcea-c4e2e46482ad",
+    "name": "MultiMoney",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "15753296"
+  },
+  "item": [
+    {
+      "name": "ConsultarInformacióndeCuenta",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5136/api/v1/accounts/12005690",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5136",
+          "path": [
+            "api",
+            "v1",
+            "accounts",
+            "12005690"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "RealizarDepósito",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Amount\" : 200.00,\r\n    \"Description\" : \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5136/api/v1/accounts/12005689/deposit",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5136",
+          "path": [
+            "api",
+            "v1",
+            "accounts",
+            "12005689",
+            "deposit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "RealizarRetiro",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"amount\": 100.00\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5136/api/v1/accounts/12005689/withdrawal",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5136",
+          "path": [
+            "api",
+            "v1",
+            "accounts",
+            "12005689",
+            "withdrawal"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TransferenciaEntreCuentas",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"CuentaOrigen\": \"12345679\",\r\n    \"CuentaDestino\": \"12345678\",\r\n    \"Amount\": 100,\r\n    \"Descripcion\": \"Pago\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7280/api/v1/transfers",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7280",
+          "path": [
+            "api",
+            "v1",
+            "transfers"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
