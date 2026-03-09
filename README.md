@@ -18,7 +18,7 @@ dotnet run
 
 ## Pasos a realizar solución .net (PASO 3)
 Por defecto la aplicación se levantará en la ruta: http://localhost:5136
-Cargar la colección de postman llamada pruebaMultimoney (Esta ya lleva los datos para realizar pruebas)
+Cargar la colección de postman llamada PruebaMultiMoneyCarlosAguilar.postman_collection.json (Esta ya lleva los datos para realizar pruebas)
 
 ##Validar que las funciones estén correctas.
 Se agregó log y middleware para manejo de excepciones globales como bonus
