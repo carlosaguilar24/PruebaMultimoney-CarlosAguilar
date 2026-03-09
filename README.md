@@ -21,6 +21,9 @@
 - Por defecto la aplicación se levantará en la ruta: http://localhost:5136
 - Cargar la colección de postman llamada PruebaMultiMoneyCarlosAguilar.postman_collection.json (Esta ya lleva los datos para realizar pruebas)
 
+## ConnectionString
+- Como la conexión no lleva valores sensibles no se encripta y se deja en appsettings, ejemplo: Server=(localdb)\\MSSQLLocalDB;Database=PruebaTecnicaMultiMoneyCarlosAguilar;Trusted_Connection=True;TrustServerCertificate=True;
+
 ## Validar que las funciones estén correctas.
 - Se agregó log y middleware para manejo de excepciones globales como bonus
 
