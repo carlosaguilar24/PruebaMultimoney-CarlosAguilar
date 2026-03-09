@@ -21,5 +21,27 @@
 - Por defecto la aplicación se levantará en la ruta: http://localhost:5136
 - Cargar la colección de postman llamada PruebaMultiMoneyCarlosAguilar.postman_collection.json (Esta ya lleva los datos para realizar pruebas)
 
-##Validar que las funciones estén correctas.
+## Validar que las funciones estén correctas.
 - Se agregó log y middleware para manejo de excepciones globales como bonus
+
+## Ejemplos request: 
+
+Deposit:
+{
+    "Amount" : 200.00,
+    "Description" : ""
+}
+
+Withdrawal:
+{
+    "amount": 100.00
+}
+
+Transfer:
+{
+    "CuentaOrigen": "12005689",
+    "CuentaDestino": "12005690",
+    "Amount": 100,
+    "Descripcion": "Pago"
+}
+```
