@@ -1,7 +1,7 @@
 {
   "info": {
-    "_postman_id": "8203cb3f-f378-4be2-bcea-c4e2e46482ad",
-    "name": "MultiMoney",
+    "_postman_id": "1fdc7d0e-48f4-4f66-98d5-7b935dbfef3b",
+    "name": "MultiMoney Copy",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "15753296"
   },
@@ -12,7 +12,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:5136/api/v1/accounts/12005690",
+          "raw": "http://localhost:5136/api/v1/accounts/12005689",
           "protocol": "http",
           "host": [
             "localhost"
@@ -22,7 +22,7 @@
             "api",
             "v1",
             "accounts",
-            "12005690"
+            "12005689"
           ]
         }
       },
@@ -99,7 +99,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"CuentaOrigen\": \"12345679\",\r\n    \"CuentaDestino\": \"12345678\",\r\n    \"Amount\": 100,\r\n    \"Descripcion\": \"Pago\"\r\n}",
+          "raw": "{\r\n    \"CuentaOrigen\": \"12005689\",\r\n    \"CuentaDestino\": \"12005690\",\r\n    \"Amount\": 100,\r\n    \"Descripcion\": \"Pago\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -107,12 +107,12 @@
           }
         },
         "url": {
-          "raw": "https://localhost:7280/api/v1/transfers",
-          "protocol": "https",
+          "raw": "http://localhost:5136/api/v1/transfers",
+          "protocol": "http",
           "host": [
             "localhost"
           ],
-          "port": "7280",
+          "port": "5136",
           "path": [
             "api",
             "v1",
